@@ -32,6 +32,6 @@ Dirígete a File > Open - selecciona la carpeta del proyecto y presiona el botó
 
 Ejecuta el archivo Main.java desde el paquete ui.
 
-Repositorio GitHub: [https://github.com/DMaX-26/llanquihue-tour] Fecha de entrega: 22/06/2026
+Repositorio GitHub: [https://github.com/DMaX-26/AgenciaTurismo2] Fecha de entrega: 22/06/2026
 ```
 ---
