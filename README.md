@@ -1,4 +1,4 @@
-🧠 Actividad Sumativa 2: Organización modular y creación de una librería personalizada
+🧠 Actividad Formativa 4: Creación de jerarquías de clases con herencia simple
 
 👤 Autor del proyecto
 ```text
@@ -11,7 +11,7 @@ Sede: Sede Online
 
 📘 Descripción general del sistema
 
-Este proyecto corresponde a la Actividad Sumativa 2 de la asignatura Desarrollo Orientado a Objetos I. Se trata de un sistema correspondiente a una Agencia de turismo llamada Llanquihue Tour. Esta actividad consiste en la carga de datos como agencia, proveedor de alojamiento y de transporte, clientes y guías turísticos de un archivo Excel al sistema.
+Este proyecto corresponde a la Actividad Formativa 4 de la asignatura Desarrollo Orientado a Objetos I. Consiste en el desarrollo de un sistema para una agencia de turismo llamada Llanquihue Tour. La actividad contempla la carga de datos desde un archivo Excel al sistema, incluyendo información de la agencia, proveedores de alojamiento y transporte, clientes y guías turísticos. Además, se implementan las clases ServicioTuristico, RutaGastronomica, PaseoLacustre y ExcursionCultural, junto con una clase encargada de gestionar estos tres principales servicios turísticos. 
 
 El proyecto fue desarrollado a partir de un caso contextualizado, abordando problemáticas reales y proponiendo una solución estructurada, modular y reutilizable.
 
@@ -19,9 +19,9 @@ El proyecto fue desarrollado a partir de un caso contextualizado, abordando prob
 ```text
 📁 src/
 ├── ui/          # Clase principal con el método main
-├── model/       # Clases de dominio (Agencia, Cliente, Direccion, GuiaTuristico, ProveedorAlojamiento, ProveedorTransporte)
+├── model/       # Clases de dominio (Agencia, Cliente, Direccion, GuiaTuristico, ProveedorAlojamiento, ProveedorTransporte, Servicio turistico, RutaGastronomica, PaseoLacustre, ExcursionCultural)
 ├── exception/   # Excepciones personalizadas (EdadInvalidaException)
-└── data/        # Gestión y acceso de datos (GestorDatos)
+└── data/        # Gestión y acceso de datos (GestorDatos, GestorServicios)
 ```
 ---
 ⚙️ Instrucciones para compilar y ejecutar el proyecto
