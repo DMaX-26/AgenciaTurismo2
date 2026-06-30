@@ -1,6 +1,7 @@
 package com.agenciaturismo2.ui;
 
 import com.agenciaturismo2.data.GestorDatos;
+import com.agenciaturismo2.data.GestorServicios;
 import com.agenciaturismo2.exception.EdadInvalidaException;
 import com.agenciaturismo2.model.*;
 
@@ -35,7 +36,17 @@ public class Main {
             //agencia llama al metodo "mostrarClientes"
             agencia.mostrarClientes();
 
+            //agencia llama al metodo buscarPorNacionalidad que filtra los datos por nacionalidad Rusa
             agencia.buscarPorNacionalidad("Rusa");
+
+            //Se crea una instancia de GestorServicios
+            GestorServicios gestorServicios = new GestorServicios();
+
+            //GestorServicios llama al metodo crearServicios. Los datos se guardan en la variable "st"
+            List<ServicioTuristico> st = gestorServicios.crearServicios();
+
+            //gestorServicios llama al metodo "mostrarServicios" y le pasa "st" con todos los servicios creados
+            gestorServicios.mostrarServicios(st);
 
         } catch (EdadInvalidaException e) {
             System.out.println("Error! "+e.getMessage());
