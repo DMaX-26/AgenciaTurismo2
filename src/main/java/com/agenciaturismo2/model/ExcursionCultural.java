@@ -24,6 +24,16 @@ public class ExcursionCultural extends ServicioTuristico{
     }
 
     /**
+     * Reutiliza el metodo de la clase padre y agrega información específica de esta clase
+     */
+    @Override
+    public void mostrarInformacion() {
+        System.out.println("<<<Excursión Cultural>>>");
+        super.mostrarInformacion();
+        System.out.println("Lugar histórico: "+lugarHistorico);
+    }
+
+    /**
      * Metodo que sobrescribe toString de la clase padre y agrega el atributo propio "lugarHistorico"
      * @return
      */
