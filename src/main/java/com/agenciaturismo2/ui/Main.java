@@ -48,6 +48,12 @@ public class Main {
             //gestorServicios llama al metodo "mostrarServicios" y le pasa "st" con todos los servicios creados
             gestorServicios.mostrarServicios(st);
 
+            //Se recorre la lista "st" de tipo ServicioTuristico
+            System.out.println();
+            for (ServicioTuristico s: st){//Cada elemento del recorrido se guarda en la variable "s"
+                s.mostrarInformacion();//"s" llama al metodo y se muestra la información específica de cada clase
+            }
+
         } catch (EdadInvalidaException e) {
             System.out.println("Error! "+e.getMessage());
         }  catch (Exception e) {
