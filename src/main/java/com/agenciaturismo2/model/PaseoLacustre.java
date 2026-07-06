@@ -29,6 +29,16 @@ public class PaseoLacustre extends ServicioTuristico{
     }
 
     /**
+     * Reutiliza el metodo de la clase padre y agrega información específica de esta clase
+     */
+    @Override
+    public void mostrarInformacion() {
+        System.out.println("---Paseo Lacustre---");
+        super.mostrarInformacion();
+        System.out.println("Tipo de embarcación: "+tipoEmbarcacion);
+    }
+
+    /**
      * Metodo que sobrescribe toString de la clase padre y agrega el atributo propio "tipoEmbarcacion"
      * @return
      */
