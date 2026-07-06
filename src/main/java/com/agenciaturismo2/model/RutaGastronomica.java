@@ -29,6 +29,16 @@ public class RutaGastronomica extends ServicioTuristico{
     }
 
     /**
+     * Hereda el metodo de la clase padre y agrega información específica de esta clase
+     */
+    @Override
+    public void mostrarInformacion() {
+        System.out.println(":::Ruta Gastronómica:::");
+        super.mostrarInformacion();
+        System.out.println("Número de paradas: "+numeroDeParadas);
+    }
+
+    /**
      * Metodo que sobrescribe toString de la clase padre y agrega el atributo propio "numeroDeParadas"
      * @return
      */
