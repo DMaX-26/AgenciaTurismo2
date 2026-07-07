@@ -1,4 +1,4 @@
-🧠 Actividad Formativa 4: Creación de jerarquías de clases con herencia simple
+🧠 Actividad Formativa 5: Aplicación de sobrescritura y polimorfismo en jerarquías
 
 👤 Autor del proyecto
 ```text
@@ -11,7 +11,7 @@ Sede: Sede Online
 
 📘 Descripción general del sistema
 
-Este proyecto corresponde a la Actividad Formativa 4 de la asignatura Desarrollo Orientado a Objetos I. Consiste en el desarrollo de un sistema para una agencia de turismo llamada Llanquihue Tour. La actividad contempla la carga de datos desde un archivo Excel al sistema, incluyendo información de la agencia, proveedores de alojamiento y transporte, clientes y guías turísticos. Además, se implementan las clases ServicioTuristico, RutaGastronomica, PaseoLacustre y ExcursionCultural, junto con una clase encargada de gestionar estos tres principales servicios turísticos. 
+Este proyecto corresponde a la Actividad Formativa 5 de la asignatura Desarrollo Orientado a Objetos I. Consiste en el desarrollo de un sistema para una agencia de turismo llamada Llanquihue Tour. La actividad contempla la carga de datos desde un archivo Excel al sistema, incluyendo información de la agencia, proveedores de alojamiento y transporte, clientes y guías turísticos. Además, se implementan las clases ServicioTuristico, RutaGastronomica, PaseoLacustre y ExcursionCultural, junto con una clase encargada de gestionar estos tres principales servicios turísticos. Cada una de estas clases incluye un método destinado a mostrar la información específica del servicio correspondiente.
 
 El proyecto fue desarrollado a partir de un caso contextualizado, abordando problemáticas reales y proponiendo una solución estructurada, modular y reutilizable.
 
@@ -19,7 +19,7 @@ El proyecto fue desarrollado a partir de un caso contextualizado, abordando prob
 ```text
 📁 src/
 ├── ui/          # Clase principal con el método main
-├── model/       # Clases de dominio (Agencia, Cliente, Direccion, GuiaTuristico, ProveedorAlojamiento, ProveedorTransporte, Servicio turistico, RutaGastronomica, PaseoLacustre, ExcursionCultural)
+├── model/       # Clases de dominio (Agencia, Cliente, Direccion, GuiaTuristico, ProveedorAlojamiento, ProveedorTransporte, ServicioTuristico, RutaGastronomica, PaseoLacustre, ExcursionCultural)
 ├── exception/   # Excepciones personalizadas (EdadInvalidaException)
 └── data/        # Gestión y acceso de datos (GestorDatos, GestorServicios)
 ```
@@ -32,6 +32,6 @@ Dirígete a File > Open - selecciona la carpeta del proyecto y presiona el botó
 
 Ejecuta el archivo Main.java desde el paquete ui.
 
-Repositorio GitHub: [https://github.com/DMaX-26/AgenciaTurismo2] Fecha de entrega: 29/06/2026
+Repositorio GitHub: [https://github.com/DMaX-26/AgenciaTurismo2] Fecha de entrega: 06/07/2026
 ```
 ---
