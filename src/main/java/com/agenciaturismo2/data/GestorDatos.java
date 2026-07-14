@@ -42,11 +42,14 @@ public class GestorDatos {
             String nacionalidad = fila.getCell(3).getStringCellValue();//Obtiene "nacionalidad" de la columna 3 como String
 
             //Datos GuiaTuristico
-            String nombreGuia = fila.getCell(5).getStringCellValue();//Obtiene "nombreGuia" de la columna 5 como String
-            int edadGuia = (int) fila.getCell(6).getNumericCellValue();//Obtiene "edadGuia" de la columna 6 (la celda lo lee como int)
-            String idiomas = fila.getCell(7).getStringCellValue();//Obtiene "idiomas" de la columna 7 como String
+            int id = (int) fila.getCell(5).getNumericCellValue();//Obtiene "id" de la columna 5 (la celda lo lee como int)
+            boolean disponibilidad = Boolean.parseBoolean(fila.getCell(6).getStringCellValue());//Obtiene "estado" de la columna 6 como boolean
+            String nombreGuia = fila.getCell(7).getStringCellValue();//Obtiene "nombre" de la columna 5 como String
+            int edadGuia = (int) fila.getCell(8).getNumericCellValue();//Obtiene "edadGuia" de la columna 6 (la celda lo lee como int)
+            String idiomas = fila.getCell(9).getStringCellValue();//Obtiene "idiomas" de la columna 7 como String
+
             //Se crea una instancia de tipo GuiaTuristico dentro del archivo
-            GuiaTuristico guiaTuristico = new GuiaTuristico(nombreGuia, edadGuia, idiomas);
+            GuiaTuristico guiaTuristico = new GuiaTuristico(id, disponibilidad, nombreGuia, edadGuia, idiomas);
 
             //Si la edadGuia es menor o igual a 0, se lanza una excepción
             if (edadGuia<=0){
