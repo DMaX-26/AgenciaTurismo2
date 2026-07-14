@@ -73,6 +73,6 @@ public class Cliente {
      */
     @Override
     public String toString() {
-        return "Nombre cliente: "+nombre+", Edad: "+edad+", Correo: "+correo+", Nacionalidad: " +nacionalidad+guiaTuristico;
+        return "Nombre cliente: "+nombre+", Edad: "+edad+", Correo: "+correo+", Nacionalidad: " +nacionalidad+" -> "+guiaTuristico;
     }
 }
