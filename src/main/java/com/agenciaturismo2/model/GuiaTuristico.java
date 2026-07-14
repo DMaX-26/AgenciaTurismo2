@@ -2,22 +2,32 @@ package com.agenciaturismo2.model;
 
 /**
  * Clase que representa a un guía turístico
- * Posee los atributos: nombre, edad, manejoDeIdiomas
+ * Hereda atributos y métodos de la superclase "RecursoAgencia"
+ * Contiene atributos propios: nombre, edad e idiomas.
  */
-public class GuiaTuristico {
-    private String nombreGuia; /** Nombre del guía turístico */
-    private int edadGuia; /** Edad del guía turístico en años */
+public class GuiaTuristico extends RecursoAgencia implements Registrable {
+    private String nombre;/** Nombre del guía turístico */
+    private int edad; /** Edad del guía turístico en años */
     private String idiomas; /** Idiomas que maneja el guía turístico */
 
     /**
      * Constructor para crear instancias de la clase GuiaTuristico
-     * @param nombreGuia
-     * @param edadGuia
+     * @param id
+     * @param disponibilidad
+     * @param nombre
+     * @param edad
      * @param idiomas
      */
-    public GuiaTuristico(String nombreGuia, int edadGuia, String idiomas) {
-        this.nombreGuia = nombreGuia;
-        this.edadGuia = edadGuia;
+    public GuiaTuristico(int id, boolean disponibilidad, String nombre, int edad, String idiomas) {
+        /**
+         * Llama al constructor de la clase padre para inicializar id y disponibilidad en el objeto "GuiaTuristico"
+         */
+        super(id, disponibilidad);
+        /**
+         * Se inicializan los atributos propios
+         */
+        this.nombre = nombre;
+        this.edad = edad;
         this.idiomas = idiomas;
     }
 
@@ -25,27 +35,15 @@ public class GuiaTuristico {
      * Métodos Getter and Setter para obtener y modificar los atributos
      * @return
      */
-    public String getNombreGuia() {
-        return nombreGuia;
+    public String getNombre() {
+        return nombre;
     }
-    public void setNombre(String nombreGuia) {
-        this.nombreGuia = nombreGuia;
+    public int getEdad() {
+        return edad;
     }
-
-    public int getEdadGuia() {
-        return edadGuia;
-    }
-    public void setEdad(int edadGuia) {
-        this.edadGuia = edadGuia;
-    }
-
     public String getIdiomas() {
         return idiomas;
     }
-    public void setIdiomas(String idiomas) {
-        this.idiomas = idiomas;
-    }
-
 
     /**
      * Metodo que retorna objeto GuiaTuristico convertido a texto
@@ -53,6 +51,19 @@ public class GuiaTuristico {
      */
     @Override
     public String toString() {
-        return "\n"+"Guía turístico: "+nombreGuia+", Edad: "+edadGuia+", Idioma/s: " +idiomas+"\n";
+        return super.toString()+", Nombre del Guía: "+nombre+", Edad: "+edad+", Idiomas: "+idiomas;
+    }
+
+    /**
+     * Se implementa de forma personalizada el metodo mostrarResumen correspondiente a la interfaz "Registrable"
+     */
+    @Override
+    public void mostrarResumen() {
+        System.out.println();
+        System.out.println("---Guía turístico---");
+        super.mostrarResumen();
+        System.out.println("Nombre: "+nombre);
+        System.out.println("Edad: "+edad);
+        System.out.println("Idiomas: "+idiomas);
     }
 }
